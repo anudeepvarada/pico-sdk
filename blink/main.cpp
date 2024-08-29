@@ -4,6 +4,11 @@
 
 #include "task.h"
 
+
+// class test {
+//    public: int i;
+// };
+
 void vBlinkTask() {
 
    for (;;) {
@@ -20,14 +25,18 @@ void vBlinkTask() {
 
 }
 
-void main() {
+int main() {
 
    gpio_init(PICO_DEFAULT_LED_PIN);
 
    gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
 
-   xTaskCreate(vBlinkTask, "Blink Task", 128, NULL, 1, NULL);
+   xTaskCreate((TaskFunction_t) vBlinkTask, "Blink Task", 128, NULL, 1, NULL);
+   // test temp;
+   // temp.i = 1;
 
    vTaskStartScheduler();
+
+   return 0;
 
 }
