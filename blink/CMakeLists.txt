@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
-set(ENV{PICO_SDK_PATH} "D:/Anudeep_Workspace/Workspace/FreeRTOS/freertos-pico/pico-sdk")
-set(ENV{FREERTOS_KERNEL_PATH} "D:/Anudeep_Workspace/Workspace/FreeRTOS/freertos-pico/pico-sdk/FreeRTOS-Kernel")
+set(ENV{PICO_SDK_PATH} "D:/Anudeep_Workspace/Workspace/FreeRTOS/freertos-pico/pico-sdk-fork/pico-sdk")
+set(ENV{FREERTOS_KERNEL_PATH} "D:/Anudeep_Workspace/Workspace/FreeRTOS/freertos-pico/pico-sdk-fork/pico-sdk/FreeRTOS-Kernel")
 #set(CMAKE_MAKE_PROGRAM "C:/MinGW/bin")
 
 SET(CMAKE_C_COMPILER_WORKS TRUE CACHE INTERNAL "")
